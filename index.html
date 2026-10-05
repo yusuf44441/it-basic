@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Persoonlijke portfolio-website">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a href="#home" class="logo">Mijn Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#over">Over mij</a></li>
+                <li><a href="#projecten">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Hallo, ik ben <span class="highlight" id="naam">Yusuf Uslu</span></h1>
+                <p id="titel">Webontwikkelaar</p>
+                <a href="#projecten" class="btn">Bekijk mijn werk</a>
+            </div>
+        </section>
+
+        <section id="over" class="about">
+            <div class="container">
+                <h2>Over mij</h2>
+                <p>Mij naam is Yusuf Uslu en ik zit in MBOUtrecht.</p>
+            </div>
+        </section>
+
+        <section id="projecten" class="projects">
+            <div class="container">
+                <h2>Projecten</h2>
+                <div class="project-grid">
+                    <a href="projecten.html" class="project-card-link">
+                        <article class="project-card">
+                            <h3>Project 1</h3>
+                            <p>Korte beschrijving van project 1.</p>
+                        </article>
+                    </a>
+                    <a href="projecten.html" class="project-card-link">
+                        <article class="project-card">
+                            <h3>Project 2</h3>
+                            <p>Korte beschrijving van project 2.</p>
+                        </article>
+                    </a>
+                    <a href="projecten.html" class="project-card-link">
+                        <article class="project-card">
+                            <h3>Project 3</h3>
+                            <p>Korte beschrijving van project 3.</p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <label for="naam-input">Naam</label>
+                    <input type="text" id="naam-input" name="naam" required>
+
+                    <label for="email-input">E-mail</label>
+                    <input type="email" id="email-input" name="email" required>
+
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" rows="5" required></textarea>
+
+                    <button type="submit" class="btn">Verstuur</button>
+                </form>
+                <p id="form-status"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Jouw Naam. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
